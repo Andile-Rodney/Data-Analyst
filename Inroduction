@@ -1,0 +1,19 @@
+
+------------------------------------------CREATING A NEW DATABASE---------------------------------------------
+create database EmployeeManagement;
+
+use EmployeeManagement
+
+select GETDATE() as Today
+select GETUTCDATE()
+select @@version
+
+-----------------------------------------CREATING A TABLE WITH COLUMNS---------------------------------------------
+create Table EmployeeGrades(
+	Grade_ID int,
+	grade_Name varchar(50))
+
+create table Employee_Information(
+Employee_ID int not null,
+Employee_Name varchar(50) null,
+Qualification varchar(50) null)
