@@ -17,3 +17,27 @@ create table Employee_Information(
 Employee_ID int not null,
 Employee_Name varchar(50) null,
 Qualification varchar(50) null)
+
+
+-------------------------------------------ALTERING TABLES------------------------------------------------
+Alter Table EmployeeGrades
+alter column CreateDate datetime not null
+alter Table EmployeeGrades
+alter column Grade_ID int Not Null;
+
+----------------------------------ADDING PRIMARY KEYS TO THE COLUMNS---------------------------------------------
+alter table EmployeeGrades
+add constraint PK_EmployeeGrades Primary Key (Grade_ID);
+
+-----------------------------------DEFINING AND ADDING COMPOSITE KEYS--------------------------------------
+alter table Employee_Information
+alter column Employee_ID int Not Null;
+
+alter table Employee_Relationship
+alter column Employee_ID int Null;
+
+alter table Employee_Information
+alter column Employee_Name varchar(50) Not Null;
+
+alter table Employee_Information
+add constraint CompositeKey Primary Key (Employee_ID,Employee_Name);
