@@ -41,3 +41,33 @@ alter column Employee_Name varchar(50) Not Null;
 
 alter table Employee_Information
 add constraint CompositeKey Primary Key (Employee_ID,Employee_Name);
+
+-----------------------------CREATING A FOREIGN KEYS---------------------------------------
+
+alter table Employee_Relationship
+add (FK_Employee_Relationship_Employee_Information)
+
+------------------------------DROPPING A FOREIGN KEY-------------------------------
+alter table Employee_Relationship
+drop (FK_Employee_Relationship_Employee_Information)
+
+----------------------------CRUD---------------------------------------------------
+
+--CREATE
+Insert into YOUR_TABLE_NAME(COLUMN1, COLUMN2)
+values (Values_Of_Column1, Values_of_Column2)
+
+----------------------------READ----------------------------------------------------
+--select * from Table_Name 
+
+-------------------------SUBSTRING--------------------------------------------------
+
+select * from your_table
+where SUBSTRING(table_name, starting_point,character_count)
+
+SELECT TOP (100) [NotificationId] ,[StoreId],[NotificationDate],
+SUBSTRING([NotificationData],31,41) OrderREF,[NotificationEvent]
+  FROM [Pilot].[ProcessedNotifications]
+  where notificationtype = 5 and storeid = 8110
+  
+-----------------------------------------------------------------------------------------
