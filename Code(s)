@@ -1,0 +1,18 @@
+# This should be created as a seperate page in the work flow that we will br handling so that we can be able to access our data as fast as we can, for now this seems to be pretty
+simple really. I think  what I need more is practice more than anything else. So I guess we shall see when the time is right I guessm but so far so good.
+
+-select * from sales.salesterritory
+--insert into sales.salesTWO
+
+--SELECT * INTO salesBackUp
+--FROM sales.salesterritory;
+
+--SELECT * INTO CustomersBackup2017
+--FROM Sales.SalesTerritory;
+
+--select * from Sales.SalesTerritory
+--for xml auto, elements, root ('SalesTerritory')
+
+use PilotDB select data.value
+--('(/Functions)[1]', 'varchar(50)' as [Functions] 
+from intfparams
