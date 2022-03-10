@@ -1,4 +1,9 @@
 # Data-Analyst
+
+
+
+
+
 Data analyst projects and notes
 CREATE DATABASE
 CREATE TABLE
