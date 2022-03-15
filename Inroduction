@@ -71,3 +71,32 @@ SUBSTRING([NotificationData],31,41) OrderREF,[NotificationEvent]
   where notificationtype = 5 and storeid = 8110
   
 -----------------------------------------------------------------------------------------
+
+------------------------------DISTINCT--------------------------------------------------
+--select distinct * from EmployeeGrades
+
+
+-------------------------------JOINS------------------------------------------------------
+
+-----------------------------Inner join----------------------------------------------------
+--Tables common in both tables
+
+-----------------------------Left Outer Join------------------------------------------------
+--Values of Base Tables whereas only those records of secondary table are selected which are common in Base table
+
+-----------------------------Right Outer Join------------------------------------------------
+--opposite of left
+
+-----------------------------Full Join------------------------------------------------
+--Selects all tables from both tables
+
+----------------------------------Views------------------------------------------------
+----------Views are realtime reflection of tables against a query------------------------
+
+create VIEW V_Employee_Details 
+AS 
+Select Employee_Information from Employee_Information
+Inner Join Employee_Relationship
+On Employee_Information.Employee_ID = Employee_Relationship.Employee_ID
+
+------------------------------------------------------------------------------------------
